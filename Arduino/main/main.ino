@@ -94,7 +94,7 @@ int dispenserControl(String command) {
   delay(duration);
   Motor1(0, false);
   
-  return 1;
+  return duration;
 }
 
 
