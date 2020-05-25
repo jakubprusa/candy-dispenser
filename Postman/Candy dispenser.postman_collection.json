@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "a98913dc-96d0-40b3-8624-ab567cf4b3c4",
+		"name": "Candy dispenser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dispense candy!",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "10.0.0.3/dispense?param=500",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"3"
+					],
+					"path": [
+						"dispense"
+					],
+					"query": [
+						{
+							"key": "param",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show actual motor speed (0-255)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "10.0.0.3/motorSpeed",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"3"
+					],
+					"path": [
+						"motorSpeed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set motor speed (0-255)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "10.0.0.3/setMotorSpeed?param=255",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"3"
+					],
+					"path": [
+						"setMotorSpeed"
+					],
+					"query": [
+						{
+							"key": "param",
+							"value": "255"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
